@@ -3,12 +3,16 @@
 import java.math.*;
 
 public class Number{
+	//Data fields
 	BigDecimal number1,number2;
+	
+	//Constructor
 	Number(String newNumber1, String newNumber2){
 		number1 = new BigDecimal(newNumber1);
 		number2 = new BigDecimal(newNumber2);
 	}
 	
+	//Accessor method to return the result
 	String getCalculate(int check,int scale){
 		String result = "";
 		if(check == 1)
